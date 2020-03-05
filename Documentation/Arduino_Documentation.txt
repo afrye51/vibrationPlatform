@@ -1,0 +1,17 @@
+Using the Vibration Platform:
+
+Start a serial connection, with a baud rate of 9600
+Send one of 5 modes with:
+	Commas separating each parameter
+	A capital Q at the end as a termination character
+
+(1) Stop - Sets all motors to speed 0
+	ex: "1Q"
+(2) Individual - Pass in motor (0-3) and speed
+	ex: "2,0,90Q"
+(3) All - Pass in speed
+	ex: "3,80Q"
+(4) Direction - Pass in angle (in degrees) and speed
+	ex: "4,135,60Q"
+(5) Steps - Pass in angle and speed
+	ex: "5,45,70Q"
