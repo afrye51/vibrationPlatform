@@ -2,16 +2,23 @@ Using the Vibration Platform:
 
 Start a serial connection, with a baud rate of 9600
 Send one of 5 modes with:
-	Commas separating each parameter
-	A capital Q at the end as a termination character
+	Each message is a String
+	The first parameter is the mode
+	All parameters are integers, separated by commas
+	Each line is terminated by a Capital 'Q'
 
-(1) Stop - Sets all motors to speed 0
+(1) Stop - Sets all motors to motor power 0
+	Message: "1Q"
 	ex: "1Q"
-(2) Individual - Pass in motor (0-3) and speed
+(2) Individual - Pass in motor (0-3), motor power
+	Message: "2,[motor number 0-3],[motor power 0-255]Q"
 	ex: "2,0,90Q"
-(3) All - Pass in speed
+(3) All - Pass in motor power
+	Message: "3,[motor power 0-255]Q"
 	ex: "3,80Q"
-(4) Direction - Pass in angle (in degrees) and speed
+(4) Direction - Pass in angle (in degrees) and motor power
+	Message: "4,[angle in degrees 0-360],[motor power 0-255]Q"
 	ex: "4,135,60Q"
-(5) Steps - Pass in angle and speed
+(5) Steps - Pass in angle and motor power
+	Message: "5,[angle in degrees 0-360],[motor power 0-255]Q"
 	ex: "5,45,70Q"
