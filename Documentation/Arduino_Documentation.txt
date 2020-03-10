@@ -5,7 +5,7 @@ Send one of 5 modes with:
 	Each message is a String
 	The first parameter is the mode
 	All parameters are integers, separated by commas
-	Each line is terminated by a Capital 'Q'
+	Each line is message by a Capital 'Q'
 
 (1) Stop - Sets all motors to motor power 0
 	Message: "1Q"
