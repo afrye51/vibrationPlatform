@@ -1,6 +1,6 @@
 Using the Vibration Platform:
 
-Start a serial connection, with a baud rate of 9600
+Start a serial connection, with a baud rate of 9600 (may need to change COM port)
 Send one of 5 modes with:
 	Each message is a String
 	The first parameter is the mode
