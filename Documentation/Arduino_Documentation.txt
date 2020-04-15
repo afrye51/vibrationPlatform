@@ -10,15 +10,15 @@ Send one of 5 modes with:
 (1) Stop - Sets all motors to motor power 0
 	Message: "1Q"
 	ex: "1Q"
-(2) Individual - Pass in motor (0-3), motor power
+(2) Individual - Pass in motor (0-3), motor power (0-255)
 	Message: "2,[motor number 0-3],[motor power 0-255]Q"
 	ex: "2,0,90Q"
-(3) All - Pass in motor power
+(3) All - Pass in motor power (0-255)
 	Message: "3,[motor power 0-255]Q"
 	ex: "3,80Q"
-(4) Direction - Pass in angle (in degrees) and motor power
+(4) Direction - Pass in angle (in degrees) and motor power (0-255)
 	Message: "4,[angle in degrees 0-360],[motor power 0-255]Q"
 	ex: "4,135,60Q"
-(5) Steps - Pass in angle and motor power
+(5) Steps - Pass in angle (in degrees) and motor power (0-255)
 	Message: "5,[angle in degrees 0-360],[motor power 0-255]Q"
 	ex: "5,45,70Q"
